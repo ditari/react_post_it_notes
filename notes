@@ -1,0 +1,50 @@
+//di server
+//buat bikin aplikasi nodejs dgn express
+npm init -y 
+npm install express cors
+//menjalankan
+node server.js
+
+
+//utk react
+//bikin folder client
+npx create-react-app client
+//jalankan app di folder client
+npm start
+
+//npm start dan npm run dev beda nya di package json nya
+
+//npm start
+  {
+    "scripts": {
+      "start": "node server.js"
+    }
+  }
+
+//npm run dev
+  {
+    "scripts": {
+      "dev": "nodemon server.js"
+    }
+  }
+  
+  //babel deprecated
+  npm install --save-dev @babel/plugin-transform-private-property-in-object
+
+//npm i mysql2
+//query sql
+
+CREATE TABLE post_it_notes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),=
+    notes TEXT
+);
+
+INSERT INTO post_it_notes (title, notes) 
+VALUES ('title 1', 'notes 1');
+
+select * from post_it_notes
+
+
+npm install bootstrap
+npm install axios
